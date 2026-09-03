@@ -5,7 +5,9 @@ import { SiteShell } from '@/components/layout/SiteShell'
 export const metadata: Metadata = {
   title: 'World Class Dental Clinic, Pune',
   description: 'Premium orthodontic & dental care in Pune led by Dr. Priyanka Saokar Navale (BDS, MDS Orthodontics).',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://worldclassdental.in'),
+  metadataBase: new URL(
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://world-class-dental.vercel.app'
+),
 }
 
 export default function RootLayout({

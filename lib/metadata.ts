@@ -7,9 +7,21 @@ interface PageMeta {
   image?: string
 }
 
+function getBaseUrl(): string {
+  const envUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim()
+  if (!envUrl) {
+    return 'https://worldclassdental.in'
+  }
+  // Ensure it has http:// or https:// protocol
+  return envUrl.startsWith('http://') || envUrl.startsWith('https://')
+    ? envUrl
+    : `https://${envUrl}`
+}
+
 export function buildMetadata({ title, description, path, image }: PageMeta): Metadata {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://worldclassdental.in'
+  const base = getBaseUrl()
   const fullTitle = `${title} | World Class Dental Clinic, Pune`
+  
   return {
     title: fullTitle,
     description,
