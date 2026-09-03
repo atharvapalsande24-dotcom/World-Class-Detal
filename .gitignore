@@ -1,0 +1,10 @@
+/.env.example
+node_modules
+
+node_modules
+.next
+.env*.local
+
+node_modules
+.next
+.env*.local

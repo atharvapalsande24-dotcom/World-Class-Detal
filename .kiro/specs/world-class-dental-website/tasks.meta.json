@@ -1,0 +1,781 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold project structure, configuration, and global styles": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413852570
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413887781
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414855516
+      }
+    ],
+    "2.1 Create `lib/data/services.ts` with the `ServiceItem` and `ProcessStep` interfaces, and all 16 service entries with `id`, `slug`, `name`, `icon`, `shortDescription`, `description` (≥ 150 words each), `benefits`, `process`, and `costRange`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413853153
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414859970
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415150302
+      }
+    ],
+    "2.2 Create `lib/data/testimonials.ts` with ≥ 6 testimonial entries (name, rating, text, treatment)": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413853813
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414860579
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415151147
+      }
+    ],
+    "2.3 Create `lib/data/faqs.ts` with ≥ 10 FAQ entries (question, answer) covering orthodontics and general dental care": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413854828
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414861373
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415152109
+      }
+    ],
+    "2.4 Create `lib/data/braces.ts` with entries for Metal, Ceramic, Self-Ligating, and Lingual braces (name, image/icon, pros, cons, costRange, slug)": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413855118
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414862176
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415153179
+      }
+    ],
+    "2.5 Create `lib/data/awards.ts`, `lib/data/whyChooseUs.ts` (≥ 8 differentiators with icon, title, sentence), and `lib/data/gallery.ts` (≥ 8 `GalleryItem` entries)": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413855439
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788414863185
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415154530
+      }
+    ],
+    "2.6 Create `lib/utils/slugify.ts` implementing the `slugify` function, and `lib/utils/validators.ts` with `validatePhone` (`/^[6-9]\\d{9}$/`) and `validateEmail` pure functions": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413855938
+      }
+    ],
+    "2.9 Create `lib/metadata.ts` with the `buildMetadata` helper function and `lib/animations.ts` with `fadeUp`, `fadeIn`, `scaleIn`, `staggerContainer`, and `slideInLeft` Framer Motion variant objects": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413856289
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415168620
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415555489
+      }
+    ],
+    "3.1 Create `lib/hooks/useReducedMotion.ts` — listens to `prefers-reduced-motion` media query and returns a boolean": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413856789
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415602645
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415722682
+      }
+    ],
+    "3.2 Create `lib/hooks/useIntroOverlay.ts` — reads/writes `localStorage` key `introSeen`, returns `{ shouldShow, dismiss }`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413857411
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415603718
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415723634
+      }
+    ],
+    "3.3 Create `lib/hooks/useMouseParallax.ts` — returns `{ rx, ry }` clamped to ±15°, returns `{ rx: 0, ry: 0 }` when reduced motion is active": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413857631
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415605124
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415724561
+      }
+    ],
+    "3.4 Create `lib/hooks/useIntersectionCounter.ts` — triggers a count-up animation using `IntersectionObserver`, fires once per page load, skips animation when reduced motion is active": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413858166
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415606902
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415725808
+      }
+    ],
+    "4.1 Create `components/ui/AnimatedSection.tsx` — reusable `motion.div` wrapper with `whileInView`, `viewport={{ once: true }}`, and `variants` prop; reads `useReducedMotion` to disable transitions": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413858400
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415732280
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416397621
+      }
+    ],
+    "4.2 Create `components/ui/CounterStat.tsx` — animated count-up using `useIntersectionCounter`; displays final value immediately when reduced motion is active": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413858804
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415734306
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416398829
+      }
+    ],
+    "4.3 Create `components/ui/LoadingSpinner.tsx` — accessible spinner used as Dynamic Import loading fallback": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413859091
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415733148
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416399730
+      }
+    ],
+    "4.4 Create `components/ui/FaqAccordion.tsx` — single-open-panel accordion with `AnimatePresence` height animation, `role=\"button\"`, `aria-expanded`, `aria-controls`; keyboard `Enter`/`Space` toggle and `ArrowDown`/`ArrowUp` navigation": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413859538
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416401279
+      }
+    ],
+    "4.6 Create `components/ui/ServiceCard.tsx` — displays Lucide icon, service name, one-sentence description; navigates to `/services/[slug]` on click": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413860173
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416402408
+      }
+    ],
+    "4.7 Create `components/ui/BraceCard.tsx` — displays brace type image/icon, name, pros, cons, cost range; links to `/services/[slug]`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413860358
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416403381
+      }
+    ],
+    "4.8 Create `components/ui/TestimonialCard.tsx` — displays patient name, star rating (Lucide `Star` icons), review text, treatment type": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413860608
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416404500
+      }
+    ],
+    "4.9 Create `components/ui/Lightbox.tsx` — full-screen dialog with `role=\"dialog\"`, `aria-modal=\"true\"`, focus trap (`useFocusTrap`), `Escape` key close, previous/next navigation, and `aria-label`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413860814
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416405579
+      }
+    ],
+    "4.10 Create `components/ui/GalleryGrid.tsx` — responsive before/after image grid using `next/image` with `loading=\"lazy\"`; manages `LightboxState` via `useReducer`; staggered Framer Motion `fadeIn` entrance": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413861057
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416407000
+      }
+    ],
+    "4.11 Create `components/ui/ContactForm.tsx` — controlled form with inline validation (phone regex, email regex), loading spinner on submit button, POST to `/api/contact`, success/error message display": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413861749
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416408204
+      }
+    ],
+    "4.12 Create `components/seo/JsonLd.tsx` — renders `<script type=\"application/ld+json\">` with the full `Dentist` LocalBusiness schema including address, telephone, URL, and `openingHoursSpecification`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413862108
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416409911
+      }
+    ],
+    "5.1 Create `components/three/ThreeErrorBoundary.tsx` — `React.Component` error boundary that catches render errors and renders `WebGLFallback`; includes the `isWebGLSupported()` utility function": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413862487
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416410850
+      }
+    ],
+    "5.2 Create `components/three/WebGLFallback.tsx` — static SVG tooth illustration or high-quality `next/image` fallback rendered when WebGL is unavailable": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413862687
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416411936
+      }
+    ],
+    "5.3 Create `components/three/IntroToothModel.tsx` — R3F `Canvas` loading `tooth.glb` via `useGLTF`; centred in viewport; error boundary wrapping `WebGLFallback`; reduced motion disables auto-rotation": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413862999
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416413565
+      }
+    ],
+    "5.4 Create `components/three/HeroCanvas.tsx` — R3F `Canvas` loading `dental-scene.glb`; mouse parallax via `useMouseParallax` applied to model mesh ref via `useFrame`; error boundary wrapping `WebGLFallback`; reduced motion disables parallax and `useFrame` rotation": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413863388
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416415179
+      }
+    ],
+    "6.1 Create `components/layout/Navbar.tsx` — fixed glassmorphic navbar with logo, anchor links, route links, \"Book Appointment\" CTA; hamburger icon for mobile (\\< 768 px) triggering full-screen/slide-in menu; scroll-based opacity increase at 80 px; logical tab order and visible focus rings": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413864012
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416417128
+      }
+    ],
+    "6.2 Create `components/layout/Footer.tsx` — clinic name/logo, tagline, contact details, nav links, social media links (open in new tab with `rel=\"noopener noreferrer\"`), privacy policy link, dynamic copyright year": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413864180
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416418614
+      }
+    ],
+    "6.3 Create `components/layout/MobileActionBar.tsx` — fixed bottom bar visible only on mobile (`md:hidden`); Call, WhatsApp, and Book buttons with Lucide icons; iOS safe-area inset padding; hides when footer is ≥ 10% visible via `IntersectionObserver`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413864465
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416420361
+      }
+    ],
+    "7.1 Create `components/intro/IntroOverlay.tsx` — `position: fixed; z-index: 9999`; uses `useIntroOverlay`; Dynamic Import for `IntroToothModel`; clinic name, city, tagline in animated typography; \"Enter\" button; Framer Motion `AnimatePresence` exit animation (≤ 800 ms); reduced motion: ≤ 400 ms opacity transition": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413864671
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416429851
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417012210
+      }
+    ],
+    "7.3 Create `components/sections/HeroSection.tsx` — 100 vh section with Dynamic Import (`ssr: false`) for `HeroCanvas`; `ThreeErrorBoundary` + `WebGLFallback`; headline, sub-headline, CTA button with Framer Motion stagger (150 ms per element); reduced motion disables mount animations and parallax": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413864781
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416431759
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417014234
+      }
+    ],
+    "7.4 Create `components/sections/TrustBar.tsx` — animated statistics strip with ≥ 4 stats using `CounterStat`; Framer Motion `whileInView` trigger; reduced motion shows final values immediately": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413865078
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416433174
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417015529
+      }
+    ],
+    "7.5 Create `components/sections/AboutSection.tsx` — `#about` anchor; descriptive clinic text; `next/image` with `loading=\"lazy\"`; Framer Motion `whileInView` slide-up (translateY 40→0); \"Learn More\" link to `/about`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413865463
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416434709
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417017226
+      }
+    ],
+    "7.6 Create `components/sections/DoctorSection.tsx` — `#doctor` anchor; Dr. Priyanka Saokar Navale name, credentials, biography, specialisations, professional photo via `next/image`; scale-in photo + fade-in text via Framer Motion `whileInView`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413865678
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416436591
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417018612
+      }
+    ],
+    "7.7 Create `components/sections/ServicesGrid.tsx` — `#services` anchor; 16 `ServiceCard` components in a responsive grid; Framer Motion stagger fade-up (50 ms per card)": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413865898
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417019687
+      }
+    ],
+    "7.8 Create `components/sections/BracesComparison.tsx` — 4 `BraceCard` components; slide-in-from-left stagger (80 ms); links to relevant `/services/[slug]` pages": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413866172
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417020983
+      }
+    ],
+    "7.9 Create `components/sections/InvisalignSection.tsx` — full-width section; headline, benefit list, ≥ 3-step process overview, before/after comparison image, \"Get a Free Consultation\" CTA to `/contact`; Framer Motion `whileInView` entrance effects": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413866717
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417022646
+      }
+    ],
+    "7.10 Create `components/sections/WhyChooseUs.tsx` — `#why-choose-us` anchor; ≥ 8 differentiator cards using data from `lib/data/whyChooseUs.ts`; fade-up + scale-in stagger (60 ms per card)": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413866856
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417023901
+      }
+    ],
+    "7.11 Create `components/sections/AwardsStrip.tsx` — duplicated content list for seamless CSS `marquee` animation; `onMouseEnter` pauses animation, `onMouseLeave` resumes; reduced motion keeps animation paused": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413867061
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417025191
+      }
+    ],
+    "7.12 Create `components/sections/TestimonialsCarousel.tsx` — ≥ 6 testimonials using `TestimonialCard`; 5-second auto-play; pause on focus/hover; prev/next keyboard-accessible buttons; Framer Motion `AnimatePresence` with `mode=\"wait\"`; reduced motion uses instant transitions": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413867353
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417026785
+      }
+    ],
+    "7.13 Create `components/sections/FaqSection.tsx` — abridged homepage FAQ showing first 5 entries using `FaqAccordion`; links to `/faq` for full list": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413867605
+      },
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417028106
+      }
+    ],
+    "8. Checkpoint — Wire homepage and verify core sections": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413867795
+      }
+    ],
+    "9.1 Create `app/about/page.tsx` — full clinic history, philosophy, team, facilities; `next/image` images; `AnimatedSection` entrances; `generateMetadata` using `buildMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413868077
+      }
+    ],
+    "9.2 Create `app/doctor/page.tsx` — full Dr. Navale profile: qualifications, professional memberships, years of experience, achievements, patient message; `generateMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413868320
+      }
+    ],
+    "9.3 Create `app/services/page.tsx` — full `ServicesGrid` (all 16 cards) with links to `/services/[slug]`; `generateMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413868491
+      }
+    ],
+    "9.4 Create `app/services/[slug]/page.tsx` — service detail page with `generateStaticParams` iterating all 16 slugs; service name, ≥ 150-word description, benefits list, process overview, \"Book This Treatment\" CTA to `/contact`; `generateMetadata`; renders custom 404 for unknown slugs": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413868785
+      }
+    ],
+    "9.5 Create `app/gallery/page.tsx` — full `GalleryGrid` with `Lightbox`; `generateMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413869339
+      }
+    ],
+    "9.6 Create `app/faq/page.tsx` — full `FaqAccordion` with all ≥ 10 FAQ items; `generateMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413869529
+      }
+    ],
+    "9.7 Create `app/contact/page.tsx` — `ContactForm`, Google Maps `<iframe>` embed, structured contact details (phone, WhatsApp, email, address); `generateMetadata`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413870043
+      }
+    ],
+    "9.8 Create `app/not-found.tsx` — friendly 404 page with dental-themed illustration/icon, \"Back to Home\" and \"/contact\" links; uses shared `Navbar` and `Footer`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413870251
+      }
+    ],
+    "10.1 Create `app/api/contact/route.ts` — parse JSON body; server-side validation (required fields, phone regex, email regex); return HTTP 422 with `errors` array on failure; initialise Nodemailer transport from `process.env`; send multipart HTML+plain-text email to `CLINIC_EMAIL`; return HTTP 200 on success; return HTTP 500 on SMTP error": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413870732
+      }
+    ],
+    "11.1 Add `generateMetadata` calls using `buildMetadata` to every page that does not yet have it; verify each page has a unique `title` + `description` combination": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413870887
+      }
+    ],
+    "11.3 Create `app/sitemap.ts` — Next.js `MetadataRoute.Sitemap` generator listing all static routes and all 16 service slug routes with `lastModified`, `changeFrequency`, and `priority`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413871155
+      }
+    ],
+    "11.4 Create `public/robots.txt` — permits all crawlers and references the sitemap URL": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413871351
+      }
+    ],
+    "12.1 Audit all pages for correct semantic HTML elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`); add ARIA landmark roles where native equivalents are absent": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413871929
+      }
+    ],
+    "12.2 Verify all `next/image` calls include a non-empty, meaningful `alt` attribute; add or fix any missing `alt` values": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413872144
+      }
+    ],
+    "12.3 Verify all interactive elements have visible focus indicators with ≥ 3:1 contrast; confirm modal/Lightbox focus trapping and focus restoration; confirm `Escape` key dismissal": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413872644
+      }
+    ],
+    "12.4 Audit colour contrast for all text: ≥ 4.5:1 for normal text, ≥ 3:1 for large text; fix any failing combinations in Tailwind classes or `globals.css`": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413873029
+      }
+    ],
+    "13.1 Confirm all R3F/Three.js components use `next/dynamic` with `ssr: false`; verify no heavy 3D assets appear in the synchronous module graph by checking the build output": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413873216
+      }
+    ],
+    "13.2 Confirm all raster images use `next/image` with explicit `width`, `height`, and `loading=\"lazy\"` where appropriate; confirm `next.config.ts` enables AVIF/WebP formats": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413873589
+      }
+    ],
+    "14. Create `README.md` and wire environment configuration": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413873902
+      }
+    ],
+    "15. Final checkpoint — End-to-end integration and all tests pass": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788413874097
+      }
+    ],
+    "3. Implement custom hooks": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788415725879
+      }
+    ],
+    "4. Implement shared UI components": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416409983
+      }
+    ],
+    "5. Implement 3D / Three.js components": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416415228
+      }
+    ],
+    "6. Implement layout components": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788416420411
+      }
+    ],
+    "7. Implement homepage sections": [
+      {
+        "executionId": "881bd853-fcff-4a3a-9ed9-9b8c7cf2f055",
+        "chatSessionId": "sess_5e7d6372-c37e-445d-b308-88d230c103c5",
+        "timestamp": 1788417028184
+      }
+    ]
+  }
+}
