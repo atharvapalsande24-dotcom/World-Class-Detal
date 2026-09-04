@@ -8,6 +8,7 @@ const footerLinks = [
   { label: 'Doctor', href: '/doctor' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'News & Awards', href: '/news-update' },
   { label: 'Contact', href: '/contact' },
 ]
 

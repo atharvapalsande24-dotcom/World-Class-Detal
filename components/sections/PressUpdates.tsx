@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowUpRight, Play } from 'lucide-react'
 
 const videos = [
@@ -17,13 +18,13 @@ export function PressUpdates() {
             <p className="section-kicker">News &amp; updates</p>
             <h2 id="press-updates-heading">World Class Dental in the spotlight</h2>
           </div>
-          <a className="press-link" href="https://www.bestorthodontistbracespune.in/news-update.html" target="_blank" rel="noopener noreferrer">
+          <Link className="press-link" href="/news-update">
             View all updates <ArrowUpRight size={16} aria-hidden="true" />
-          </a>
+          </Link>
         </div>
 
         <div className="press-grid">
-          <a className="press-feature" href="https://www.bestorthodontistbracespune.in/news-update.html" target="_blank" rel="noopener noreferrer">
+          <Link className="press-feature" href="/news-update">
             <div className="press-feature-image">
               <Image src="/images/clinic/press-times-feature.jpg" alt="World Class Dental feature from Times of India" fill sizes="(max-width: 900px) 100vw, 45vw" />
             </div>
@@ -33,7 +34,7 @@ export function PressUpdates() {
               <p>Read the clinic&apos;s public features, interviews and dental care updates.</p>
               <ArrowUpRight size={18} aria-hidden="true" />
             </div>
-          </a>
+          </Link>
 
           <div className="press-video-grid">
             {videos.map(video => (
