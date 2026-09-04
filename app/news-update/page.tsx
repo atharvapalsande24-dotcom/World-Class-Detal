@@ -29,6 +29,7 @@ const homepageRecognition = [
   { image: 'pic2.jpg', title: 'Professional achievement' },
   { image: 'pic5.jpg', title: 'World Class Dental recognition' },
 ]
+const homepageRecognitionLoop = [...homepageRecognition, ...homepageRecognition]
 
 function CertificateGrid({ images, label }: { images: string[]; label: string }) {
   return (
@@ -58,7 +59,7 @@ export default function NewsUpdatePage() {
       <section className="news-recognition-strip" aria-labelledby="recognition-strip-heading">
         <div className="news-recognition-heading"><p className="section-kicker">Featured recognition</p><h2 id="recognition-strip-heading">A record of excellence</h2></div>
         <div className="news-recognition-track">
-          {homepageRecognition.map(item => <figure className="news-recognition-card" key={item.image}><Image src={`/images/awards/home-strip/${item.image}`} alt={item.title} fill sizes="210px" /><figcaption>{item.title}</figcaption></figure>)}
+          {homepageRecognitionLoop.map((item, index) => <figure className="news-recognition-card" key={`${item.image}-${index}`}><Image src={`/images/awards/home-strip/${item.image}`} alt={item.title} fill sizes="210px" /><figcaption>{item.title}</figcaption></figure>)}
         </div>
       </section>
 
