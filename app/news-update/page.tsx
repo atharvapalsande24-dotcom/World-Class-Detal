@@ -20,6 +20,15 @@ const professionalAwards = [
 const achievements2019 = ['A1.jpg', 'A2.jpg', 'A3.jpg', 'A4.jpg']
 const awardsSummary = Array.from({ length: 10 }, (_, index) => `${index + 1}.png`)
 const nominationsSummary = Array.from({ length: 7 }, (_, index) => `n${index + 1}.png`)
+const homepageRecognition = [
+  { image: 'Award1.jpg', title: 'Dentistry Awards 2019 winner' },
+  { image: 'Orthodontist.png', title: 'Best Orthodontist of the Year' },
+  { image: 'dentist.png', title: 'Outstanding Dentist recognition' },
+  { image: 'dentistry.png', title: 'Excellence in Dentistry' },
+  { image: 'pic.jpg', title: 'Award-winning dental care' },
+  { image: 'pic2.jpg', title: 'Professional achievement' },
+  { image: 'pic5.jpg', title: 'World Class Dental recognition' },
+]
 
 function CertificateGrid({ images, label }: { images: string[]; label: string }) {
   return (
@@ -44,6 +53,13 @@ export default function NewsUpdatePage() {
           <div className="news-meta"><span><MapPin size={15} aria-hidden="true" /> Pune, India</span><span><CalendarDays size={15} aria-hidden="true" /> Since 2018</span></div>
         </div>
         <div className="news-hero-image"><Image src="/images/awards/smile.jpeg" alt="Dr. Priyanka Saokar Navale featured in a dental news article" fill priority sizes="(max-width: 800px) 100vw, 42vw" /></div>
+      </section>
+
+      <section className="news-recognition-strip" aria-labelledby="recognition-strip-heading">
+        <div className="news-recognition-heading"><p className="section-kicker">Featured recognition</p><h2 id="recognition-strip-heading">A record of excellence</h2></div>
+        <div className="news-recognition-track">
+          {homepageRecognition.map(item => <figure className="news-recognition-card" key={item.image}><Image src={`/images/awards/home-strip/${item.image}`} alt={item.title} fill sizes="210px" /><figcaption>{item.title}</figcaption></figure>)}
+        </div>
       </section>
 
       <section className="news-story" aria-labelledby="story-heading">
