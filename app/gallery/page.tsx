@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import { GalleryGrid } from '@/components/ui/GalleryGrid'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Patient Gallery | World Class Dental Clinic, Pune',
+export const metadata: Metadata = buildMetadata({
+  title: 'Patient Gallery',
   description: 'Before & after treatment results at World Class Dental Clinic, Pune.',
-}
+  path: '/gallery',
+})
 
 export default function GalleryPage() {
   return (

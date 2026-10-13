@@ -7,20 +7,21 @@ interface PageMeta {
   image?: string
 }
 
-function getBaseUrl(): string {
+export function getSiteUrl(): string {
   const envUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim()
   if (!envUrl) {
     return 'https://worldclassdental.in'
   }
-  // Ensure it has http:// or https:// protocol
-  return envUrl.startsWith('http://') || envUrl.startsWith('https://')
+  const siteUrl = envUrl.startsWith('http://') || envUrl.startsWith('https://')
     ? envUrl
     : `https://${envUrl}`
+  return siteUrl.replace(/\/+$/, '')
 }
 
 export function buildMetadata({ title, description, path, image }: PageMeta): Metadata {
-  const base = getBaseUrl()
+  const base = getSiteUrl()
   const fullTitle = `${title} | World Class Dental Clinic, Pune`
+  const imageUrl = image ? new URL(image, `${base}/`).toString() : undefined
   
   return {
     title: fullTitle,
@@ -29,16 +30,9 @@ export function buildMetadata({ title, description, path, image }: PageMeta): Me
     openGraph: {
       title: fullTitle,
       description,
-      url: `${base}${path}`,
+      url: new URL(path, `${base}/`).toString(),
       siteName: 'World Class Dental Clinic',
-      images: [
-        {
-          url: image ?? `${base}/images/og-image.jpg`,
-          width: 1200,
-          height: 630,
-          alt: 'World Class Dental Clinic, Pune',
-        },
-      ],
+      ...(imageUrl && { images: [{ url: imageUrl, alt: 'World Class Dental Clinic, Pune' }] }),
       type: 'website',
       locale: 'en_IN',
     },
@@ -46,10 +40,14 @@ export function buildMetadata({ title, description, path, image }: PageMeta): Me
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      images: [image ?? `${base}/images/og-image.jpg`],
+      ...(imageUrl && { images: [imageUrl] }),
     },
     alternates: {
-      canonical: `${base}${path}`,
+      canonical: new URL(path, `${base}/`).toString(),
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   }
 }

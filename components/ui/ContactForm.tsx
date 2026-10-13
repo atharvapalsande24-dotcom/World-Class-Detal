@@ -11,6 +11,7 @@ interface FormData {
   phone: string
   email: string
   date: string
+  time: string
   service: string
   message: string
 }
@@ -25,9 +26,10 @@ interface FormErrors {
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error'
 
 export function ContactForm() {
-  const [form, setForm] = useState<FormData>({ name: '', phone: '', email: '', date: '', service: '', message: '' })
+  const [form, setForm] = useState<FormData>({ name: '', phone: '', email: '', date: '', time: '', service: '', message: '' })
   const [errors, setErrors] = useState<FormErrors>({})
   const [status, setStatus] = useState<SubmitStatus>('idle')
+  const [serverError, setServerError] = useState('')
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {}
@@ -44,6 +46,7 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!validate()) return
+    setServerError('')
     setStatus('loading')
     try {
       const res = await fetch('/api/contact', {
@@ -53,7 +56,7 @@ export function ContactForm() {
       })
       if (res.ok) {
         setStatus('success')
-        setForm({ name: '', phone: '', email: '', date: '', service: '', message: '' })
+        setForm({ name: '', phone: '', email: '', date: '', time: '', service: '', message: '' })
       } else {
         const data = await res.json()
         if (data.errors) {
@@ -61,9 +64,11 @@ export function ContactForm() {
           for (const err of data.errors) serverErrors[err.field as keyof FormErrors] = err.message
           setErrors(serverErrors)
         }
+        if (typeof data.error === 'string') setServerError(data.error)
         setStatus('error')
       }
-    } catch {
+    } catch (error) {
+      setServerError(error instanceof Error ? error.message : 'Unable to send your request. Please call the clinic.')
       setStatus('error')
     }
   }
@@ -91,7 +96,7 @@ export function ContactForm() {
       {status === 'error' && (
         <div className="flex items-center gap-3 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700" role="alert">
           <AlertCircle size={20} className="flex-shrink-0" />
-          <p className="text-sm">Something went wrong. Please try again or call us directly.</p>
+          <p className="text-sm">{serverError || 'Something went wrong. Please try again or call us directly.'}</p>
         </div>
       )}
 
@@ -160,6 +165,16 @@ export function ContactForm() {
           />
         </div>
         <div>
+          <label htmlFor="time" className="block text-sm font-medium text-neutral-700 mb-1">Preferred Time</label>
+          <input
+            id="time"
+            type="time"
+            value={form.time}
+            onChange={e => setForm(f => ({ ...f, time: e.target.value }))}
+            className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white text-neutral-900 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-colors"
+          />
+        </div>
+        <div className="sm:col-span-2">
           <label htmlFor="service" className="block text-sm font-medium text-neutral-700 mb-1">Service of Interest</label>
           <select
             id="service"

@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowUpRight, Award, CalendarDays, MapPin } from 'lucide-react'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'News & Awards | World Class Dental Clinic, Pune',
+export const metadata: Metadata = buildMetadata({
+  title: 'Clinic News & Awards',
   description: 'News, professional achievements, awards and nominations of Dr. Priyanka Saokar Navale and World Class Dental Clinic, Pune.',
-}
+  path: '/news-update',
+})
 
 const professionalAwards = [
   { image: 'g.png', title: 'Excellence in Orthodontics', text: 'Certificate of Appreciation under the Excellence in Orthodontics category by Indian Health.' },

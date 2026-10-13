@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { ContactForm } from '@/components/ui/ContactForm'
 import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'Book an Appointment | World Class Dental Clinic, Pune',
+export const metadata: Metadata = buildMetadata({
+  title: 'Book a Dental Appointment',
   description: 'Get in touch with our team in Pune. Book your appointment at World Class Dental Clinic.',
-}
+  path: '/contact',
+})
 
 export default function ContactPage() {
   return (

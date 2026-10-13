@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { SiteShell } from '@/components/layout/SiteShell'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'World Class Dental Clinic, Pune',
-  description: 'Premium orthodontic & dental care in Pune led by Dr. Priyanka Saokar Navale (BDS, MDS Orthodontics).',
-  metadataBase: new URL(
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://world-class-dental.vercel.app'
-),
-}
+export const metadata: Metadata = buildMetadata({
+  title: 'Dentist & Orthodontist in Pune',
+  description: 'Expert dental and orthodontic care in Pune, including braces, Invisalign, implants, and smile makeovers. Book a consultation with Dr. Priyanka Saokar Navale.',
+  path: '/',
+})
 
 export default function RootLayout({
   children,
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
+        <JsonLd />
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

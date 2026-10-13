@@ -3,6 +3,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Page Not Found | World Class Dental Clinic, Pune',
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 export default function NotFound() {

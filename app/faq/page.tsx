@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { FaqAccordion } from '@/components/ui/FaqAccordion'
 import { faqs } from '@/lib/data/faqs'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'FAQs | World Class Dental Clinic, Pune',
+export const metadata: Metadata = buildMetadata({
+  title: 'Dental Care FAQs',
   description: 'Answers to common dental & orthodontic questions at World Class Dental Clinic, Pune.',
-}
+  path: '/faq',
+})
 
 export default function FaqPage() {
   return (

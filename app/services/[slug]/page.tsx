@@ -3,18 +3,26 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 import { services } from '@/lib/data/services'
+import { buildMetadata } from '@/lib/metadata'
 
 interface Props {
   params: { slug: string }
 }
 
+export function generateStaticParams() {
+  return services.map(service => ({ slug: service.slug }))
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = services.find(item => item.slug === params.slug)
-  if (!service) return { title: 'Service Not Found | World Class Dental Clinic, Pune' }
-  return {
-    title: `${service.name} | World Class Dental Clinic, Pune`,
-    description: service.shortDescription,
+  if (!service) {
+    return { title: 'Service Not Found | World Class Dental Clinic, Pune', robots: { index: false, follow: false } }
   }
+  return buildMetadata({
+    title: service.name,
+    description: service.shortDescription,
+    path: `/services/${service.slug}`,
+  })
 }
 
 export default function ServiceDetailPage({ params }: Props) {

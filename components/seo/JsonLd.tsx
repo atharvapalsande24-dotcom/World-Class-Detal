@@ -1,5 +1,7 @@
+import { getSiteUrl } from '@/lib/metadata'
+
 export function JsonLd() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://worldclassdental.in'
+  const siteUrl = getSiteUrl()
 
   const schema = {
     '@context': 'https://schema.org',
@@ -32,14 +34,16 @@ export function JsonLd() {
       },
     ],
     priceRange: '₹₹',
-    image: `${siteUrl}/images/og-image.jpg`,
-    sameAs: [],
+    sameAs: [
+      'https://www.instagram.com/worldclassdentalclinicpune',
+      'https://www.facebook.com/worldclassdentalclinicpune',
+    ],
   }
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}
     />
   )
 }

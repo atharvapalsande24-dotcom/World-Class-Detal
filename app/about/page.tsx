@@ -1,10 +1,11 @@
-import type { Metadata } from 'next'
 import { AboutSection } from '@/components/sections/AboutSection'
+import { buildMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'About Us | World Class Dental Clinic, Pune',
+export const metadata = buildMetadata({
+  title: 'About Our Dental Clinic',
   description: 'Learn about World Class Dental Clinic\'s history, values, and state-of-the-art facilities in Pune.',
-}
+  path: '/about',
+})
 
 export default function AboutPage() {
   return (
